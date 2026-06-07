@@ -1,76 +1,36 @@
-# ☕ Coffee Sales Analysis
+# Coffee Sales Analysis ☕
 
-A data analysis project exploring coffee shop sales transactions — uncovering best-selling products, revenue trends, peak hours, and payment behavior.
+A simple data analysis project I built to practice Python and data visualization.
 
----
+## What this project does
 
-## 📁 Project Structure
+- Loads real coffee shop sales data
+- Cleans any missing values
+- Creates 3 charts to understand the sales better
 
+## Charts
+
+- **Chart 1** – Most popular coffee drinks
+- **Chart 2** – Which coffee made the most money
+- **Chart 3** – How customers paid (cash vs card)
+
+## How to run it
+
+1. Install the libraries:
 ```
-coffee-sales-analysis/
-│
-├── index_1.csv                  # Raw sales dataset
-├── coffee_sales_analysis.py     # Main analysis script
-├── charts/                      # Auto-generated charts
-│   ├── best_selling_coffee.png
-│   ├── revenue_by_coffee.png
-│   ├── payment_methods.png
-│   └── sales_by_hour.png
-└── README.md
-```
-
----
-
-## 📊 Dataset Overview
-
-| Column | Description |
-|---|---|
-| `date` | Date of transaction |
-| `datetime` | Exact timestamp |
-| `cash_type` | Payment method (card / cash) |
-| `card` | Anonymized card ID |
-| `money` | Transaction amount |
-| `coffee_name` | Product purchased |
-
-- **3,636** total transactions
-- **8** unique coffee products
-- **97.6%** card payments, **2.4%** cash
-
----
-
-## 🔍 Key Findings
-
-- **Best Seller:** Americano with Milk (824 sales)
-- **#2 Product:** Latte (782 sales)
-- **Top Revenue:** Americano with Milk
-- **Average Transaction:** ~31.75
-
----
-
-## 🚀 How to Run
-
-1. Clone the repo:
-```bash
-git clone https://github.com/YOUR_USERNAME/coffee-sales-analysis.git
-cd coffee-sales-analysis
-```
-
-2. Install dependencies:
-```bash
 pip install pandas matplotlib
 ```
 
-3. Run the analysis:
-```bash
+2. Run the script:
+```
 python coffee_sales_analysis.py
 ```
 
-Charts will be saved automatically in the `charts/` folder.
+## Tools I used
 
----
-
-## 🛠️ Libraries Used
-
+- Python
+- Pandas (for data cleaning)
+- Matplotlib (for charts)
 - `pandas` — data cleaning and analysis
 - `matplotlib` — data visualization
 
